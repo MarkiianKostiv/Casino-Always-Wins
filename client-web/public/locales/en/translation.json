@@ -1,0 +1,105 @@
+{
+  "welcome": "Welcome",
+  "try_lack": "Try your luck",
+  "auth": "Login",
+  "email": "Enter your email",
+  "password": "Enter your password",
+  "username": "Enter your username",
+  "logIn": " Log In",
+  "no_account": "Don't have an account?",
+  "reg": "Register",
+  "registration": "Register",
+  "sign_up": "Sign up",
+  "spin": "Spin",
+  "have_account": "Or you already have an account?",
+  "sign_in": "Login",
+  "ex": "ex",
+  "confirm": "Confirm",
+  "cancel": "Cancel",
+  "g_h": "Games History",
+  "p_r": "Players Rating",
+  "win": "Win",
+  "loss": "Loss",
+  "home": "Home",
+  "result": "Result",
+  "description": "Welcome to our game! Click the 'Spin' button to start the wheel of luck. We wish you good luck! If you are lucky and win on the wheel, you will win this game. If you're unlucky, you'll lose. Try to keep your rating high!",
+  "policy": {
+    "title": "Privacy Policy",
+    "introduction_header": "Introduction",
+    "introduction": "Welcome to [Casino Always Wins]. This site is created for educational and demonstration purposes only. By using our website, you acknowledge and agree to the terms and conditions outlined in this Privacy Policy.",
+    "information_header": "Information We Collect",
+    "information": "We may collect the following types of information from our users.Personal Information: such as your name, email address, and any other information you voluntarily provide. How We Use Your Information. The information we collect is used to. Improve and personalize your experience on our website. Respond to your inquiries and provide customer support.",
+    "data_security_header": "Data Security",
+    "data_security": "We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. However, no internet transmission is completely secure or error-free, so we cannot guarantee absolute security.",
+    "user_awareness_header": "User Awareness",
+    "user_awareness": "By using this website, you are aware that it is intended solely for entertainment purposes. The logic of the game is designed to make it challenging to achieve a winning result. Users acknowledge and agree that the outcomes are intended to demonstrate the difficulty and unpredictability of casino games.",
+    "changes_p_p_header": "Changes to This Privacy Policy",
+    "changes_p_p": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. It is your responsibility to review this Privacy Policy periodically for any changes.",
+    "contact_us_header": "Contact Us",
+    "contact_us": "If you have any questions about this Privacy Policy, please contact us at [Contact Information]."
+  },
+  "user_profile": {
+    "profile": "Profile",
+    "username": "Your username",
+    "email": "Your email",
+    "edit_username": "Edit username",
+    "user_rating": "User Games Rating",
+    "wins_%": "Percentage of wins",
+    "total_games": "Total games played",
+    "w_games": "Winning games",
+    "l_games": "Lost games",
+    "g_rating": "Global rating"
+  },
+  "spinning_wheel": {
+    "you": "You",
+    "win": "Win",
+    "loss": "Loss"
+  },
+  "footer": {
+    "about_us": "About Us",
+    "contact_us": "Contact Us",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service",
+    "contact_information": "Contact Information",
+    "follow_me": "Follow Me",
+    "r_reserved": "All rights reserved."
+  },
+  "header": {
+    "my_profile": "My Profile",
+    "rating": "Rating",
+    "logout": "Logout"
+  },
+  "about_us": {
+    "header": "Welcome to Casino Always Wins",
+    "p_1": "Try your luck! Please note that this website is not a real casino. The site is a simulation.",
+    "p_2": "Try your luck and try to outsmart the algorithm. The more wins you have, the less likely you are to win the next game, thanks to the algorithm for determining the winning rate. Try to get a high rating. The site is based on the concept of 'casino always in the black', which means that the website will try to always be in the black, no matter how many games you play.",
+    "p_3": "The site is also designed to show the dangers of gambling and the process of getting involved in the game, at first you will get more winning games, but to get a rating you need to play a certain number of games, and with each game this chance will decrease, but not mundane.",
+    "p_4": "So, can you outsmart Casino Always Wins' algorithms? Click the Try it button and accept the challenge."
+  },
+  "logout": {
+    "header": "Do you want to logout?"
+  },
+  "terms_of_use": {
+    "header": "Terms of Use for Casino Always Wins",
+    "section_1": {
+      "title": "Disclaimer",
+      "content": "Casino Always Wins is not a real gambling platform. It is designed for educational and entertainment purposes only. The platform showcases the potential risks associated with gambling by simulating an environment with a reduced likelihood of winning."
+    },
+    "section_2": {
+      "title": "Algorithmic Adjustments",
+      "content": "Please be aware that the outcomes of the games are influenced by a specially crafted algorithm that intentionally lowers the chances of winning to demonstrate the concept of 'the house always wins'. This is meant to simulate the typical house advantage present in real casinos."
+    },
+    "section_3": {
+      "title": "User Conduct",
+      "content": "Users are expected to use this site responsibly and understand the educational nature of the simulations. Any form of abuse, exploitation, or misunderstanding of the platform's intent is discouraged and may lead to restrictions on access."
+    },
+    "section_4": {
+      "title": "Privacy and Data",
+      "content": "We respect your privacy and do not collect any personal data without your consent. Any data collected will be solely for improving the platform's experience and will not be shared with third parties."
+    },
+    "section_5": {
+      "title": "Limitations of Liability",
+      "content": "Casino Always Wins shall not be held liable for any perceived or actual losses, financial or otherwise, incurred through the use of this platform. Users participate at their own risk and are encouraged to recognize the simulated nature of the activities."
+    }
+  }
+}
