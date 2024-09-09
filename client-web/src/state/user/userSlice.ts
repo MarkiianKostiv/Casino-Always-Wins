@@ -24,7 +24,7 @@ const userSlice = createSlice({
   reducers: {
     registerRequest: (
       state,
-      action: PayloadAction<{
+      _action: PayloadAction<{
         email: string;
         username: string;
         password: string;
@@ -44,7 +44,7 @@ const userSlice = createSlice({
     },
     loginRequest: (
       state,
-      action: PayloadAction<{ email: string; pass: string }>
+      _action: PayloadAction<{ email: string; pass: string }>
     ) => {
       state.loading = true;
       state.error = null;
@@ -58,7 +58,7 @@ const userSlice = createSlice({
       state.error = action.payload;
       toast.error(action.payload);
     },
-    getUserDataRequest: (state, action: PayloadAction) => {
+    getUserDataRequest: (state, _action: PayloadAction) => {
       state.loading = true;
       state.error = null;
     },
@@ -79,7 +79,7 @@ const userSlice = createSlice({
     },
     updateRequest: (
       state,
-      action: PayloadAction<{ id: string | undefined; username: string }>
+      _action: PayloadAction<{ id: string | undefined; username: string }>
     ) => {
       (state.loading = false), (state.error = null);
     },

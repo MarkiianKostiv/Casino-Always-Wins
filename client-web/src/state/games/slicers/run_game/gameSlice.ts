@@ -14,7 +14,7 @@ const gameSlice = createSlice({
   name: "game",
   initialState,
   reducers: {
-    gameRequest: (state, action) => {
+    gameRequest: (state) => {
       state.loading = true;
       state.error = null;
     },

@@ -27,7 +27,7 @@ const gamesUserSlice = createSlice({
   name: "user/games",
   initialState,
   reducers: {
-    userGamesRequest: (state, action: PayloadAction<string>) => {
+    userGamesRequest: (state, _action: PayloadAction<string>) => {
       state.loading = true;
       state.error = null;
     },

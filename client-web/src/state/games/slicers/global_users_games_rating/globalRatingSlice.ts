@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { IRating } from "../../interfaces/IRating";
+import { IRating } from "../../../../interfaces/IRating";
 export interface RatingState {
   rating: null | IRating[];
   loading: boolean;

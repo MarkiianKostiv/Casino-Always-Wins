@@ -52,6 +52,11 @@ export const UserProfile = () => {
     <Wrapper>
       <GoBackBtn />
       <div className='flex md:flex-row flex-col mb-8 items-center justify-around w-full mt-8 gap-10'>
+        {error && (
+          <div className='text-red-500 bg-red-100 border border-red-400 p-4 rounded-lg w-full text-center'>
+            {error}
+          </div>
+        )}
         <aside className='md:w-1/2 w-full h-[250px]'>
           <h1 className='flex items-center md:justify-start justify-center gap-3'>
             {t("user_profile.profile")}:
