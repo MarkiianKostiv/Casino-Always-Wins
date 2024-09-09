@@ -15,7 +15,7 @@ export const TermsOfUse = () => {
   return (
     <div
       className='before:absolute before:w-full before:h-full before:bg-[#000] before:opacity-[80%] relative flex 
-  items-center justify-center min-h-[100vh] w-full pr-[10px] pl-[10px] bg-cover'
+  items-center justify-center min-h-[100vh] w-full p-[10px] bg-cover'
       style={{
         backgroundImage: `url(${bgGif})`,
         backgroundColor: "#000",
@@ -24,7 +24,7 @@ export const TermsOfUse = () => {
       <div className='w-full flex items-center justify-center flex-col text-[#fff]'>
         {isToken && <GoBackBtn />}
         <div
-          className={`w-[80%] rounded-lg p-[30px] text-center border border-1 border-solid border-[rgba(255,255,255,0.5)]
+          className={`w-full sm:w-[80%] mt-4 rounded-lg p-[30px] text-center border border-1 border-solid border-[rgba(255,255,255,0.5)]
         backdrop-blur flex flex-col items-start justify-between gap-6`}
         >
           <div className='flex flex-col items-center'>

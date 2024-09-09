@@ -10,37 +10,37 @@ export const PrivacyPolicy = () => {
         <h3 className='mt-3 text-lg font-medium'>
           {t("policy.introduction_header")}
         </h3>
-        <p className='text-left text-base font-normal'>
+        <p className='md:text-left text-base font-normal text-justify'>
           {t("policy.introduction")}
         </p>
         <h3 className='mt-3 text-lg font-medium'>
           {t("policy.information_header")}
         </h3>
-        <p className='text-left text-base font-normal'>
+        <p className='md:text-left text-base font-normal text-justify'>
           {t("policy.information")}
         </p>
         <h3 className='mt-3 text-lg font-medium'>
           {t("policy.data_security_header")}
         </h3>
-        <p className='text-left text-base font-normal'>
+        <p className='md:text-left text-base font-normal text-justify'>
           {t("policy.data_security")}
         </p>
         <h3 className='mt-3 text-lg font-medium'>
           {t("policy.user_awareness_header")}
         </h3>
-        <p className='text-left text-base font-normal'>
+        <p className='md:text-left text-base font-normal text-justify'>
           {t("policy.user_awareness")}
         </p>
         <h3 className='mt-3 text-lg font-medium'>
           {t("policy.changes_p_p_header")}
         </h3>
-        <p className='text-left text-base font-normal'>
+        <p className='md:text-left text-base font-normal text-justify'>
           {t("policy.changes_p_p")}
         </p>
         <h3 className='mt-3 text-lg font-medium'>
           {t("policy.contact_us_header")}
         </h3>
-        <p className='text-left text-base font-normal'>
+        <p className='md:text-left text-base font-normal text-justify'>
           {t("policy.contact_us")}
         </p>
       </div>

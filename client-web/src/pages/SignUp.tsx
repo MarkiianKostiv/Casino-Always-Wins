@@ -88,6 +88,7 @@ export const SignUp = () => {
       navigate("/");
     }
   }, [user, navigate]);
+  // console.log(user);
 
   const onSubmit = (data: {
     email: string;

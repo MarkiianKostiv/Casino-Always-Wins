@@ -1,6 +1,6 @@
 const config = {
   api: {
-    url: "http://localhost:3000",
+    url: `${import.meta.env.VITE_API_URL}`,
   },
 } as const;
 

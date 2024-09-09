@@ -53,7 +53,10 @@ export const MobileMenu = () => {
   return (
     <motion.div
       ref={menuRef}
-      className='absolute top-[100%] left-0 w-full bg-black pt-3 pb-3 flex items-center justify-center z-10'
+      className={`absolute top-[100%] left-0 w-full 
+        bg-black ${
+          isMobileMenuOpen ? "" : "hidden"
+        } pt-3 pb-3 flex items-center justify-center z-10`}
       initial={{ opacity: 0, y: -20 }}
       animate={{
         opacity: isMobileMenuOpen ? 1 : 0,

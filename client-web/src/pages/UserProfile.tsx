@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../state/store";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { Wrapper } from "../components/layout/Wrapper";
 import EditIcon from "@mui/icons-material/Edit";
 import { Formik, ErrorMessage, Field, Form, FormikHelpers } from "formik";
@@ -52,9 +51,9 @@ export const UserProfile = () => {
   return (
     <Wrapper>
       <GoBackBtn />
-      <div className='flex items-center justify-around w-full mt-8 gap-10'>
-        <aside className='w-1/2 h-[200px]'>
-          <h1 className='flex items-center justify-start gap-3'>
+      <div className='flex md:flex-row flex-col mb-8 items-center justify-around w-full mt-8 gap-10'>
+        <aside className='md:w-1/2 w-full h-[250px]'>
+          <h1 className='flex items-center md:justify-start justify-center gap-3'>
             {t("user_profile.profile")}:
             <span className='bg-secondary-light text-[#000] text-lg font-semibold pt-2 pb-2 pl-4 pr-4 rounded-xl'>
               {user?.username}
@@ -83,8 +82,8 @@ export const UserProfile = () => {
             </li>
           </ul>
         </aside>
-        <aside className='w-1/2 h-[200px]'>
-          <h1 className='text-lg font-semibold pt-2 pb-2 pl-4 pr-4'>
+        <aside className='md:w-1/2  w-full h-[250px]'>
+          <h1 className='text-lg font-semibold pt-2 pb-2 pl-4 pr-4 text-center md:text-start'>
             {t("user_profile.user_rating")}
           </h1>
           <ul

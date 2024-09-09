@@ -55,7 +55,10 @@ export const Header = () => {
   };
 
   return (
-    <header className='w-full bg-secondary flex items-center justify-between pt-3 pb-3 pr-6 pl-6 sticky top-0 z-20'>
+    <header
+      className={`w-full bg-secondary flex items-center 
+      justify-between pt-3 pb-3 pr-6 pl-6 sticky top-0 z-30`}
+    >
       <div
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}

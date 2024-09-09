@@ -11,25 +11,8 @@ const PrivateRoute: React.FC = () => {
   const token = localStorage.getItem("access_token");
   const visitToken = localStorage.getItem("visit_token");
   const { user, loading } = useSelector((state: RootState) => state.user);
-
-  useEffect(() => {
-    dispatch(getUserDataRequest());
-    if (user) {
-      dispatch(userGamesRequest(user?.id));
-    }
-  }, [dispatch]);
   const accessToken = localStorage.getItem("access_token");
   const refreshToken = localStorage.getItem("refresh_token");
-
-  useEffect(() => {
-    if (user && accessToken && refreshToken) {
-      dispatch(userGamesRequest(user?.id));
-    }
-  }, [user, dispatch]);
-
-  if (loading) {
-    return <LoadingScreen />;
-  }
 
   if (!visitToken) {
     return (
@@ -47,6 +30,20 @@ const PrivateRoute: React.FC = () => {
         replace
       />
     );
+  }
+
+  useEffect(() => {
+    dispatch(getUserDataRequest());
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (user && accessToken && refreshToken) {
+      dispatch(userGamesRequest(user?.id));
+    }
+  }, [user, dispatch]);
+
+  if (loading) {
+    return <LoadingScreen />;
   }
 
   return <Outlet />;
