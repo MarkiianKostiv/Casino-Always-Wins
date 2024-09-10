@@ -130,10 +130,10 @@ export const UserProfile = () => {
       >
         <ToastContainer className={`z-50 opacity-100`} />
         <div
-          className={`w-[50%] rounded-lg p-[30px] text-center border border-1 border-solid border-[rgba(255,255,255,0.5)]
+          className={`w-[90%] sm:w-[50%] rounded-lg p-[30px] text-center border border-1 border-solid border-[rgba(255,255,255,0.5)]
         backdrop-blur`}
         >
-          <div className='w-full flex items-center justify-end pr-3'>
+          <div className='w-full flex items-center justify-end pr-3 mb-5 sm:mb-0'>
             <button onClick={closeOpen}>
               <ClearIcon />
             </button>
@@ -148,11 +148,11 @@ export const UserProfile = () => {
                 <div className='relative border-b-2 border-solid border-[#ccc]'>
                   <Field
                     name='username'
-                    className='w-full h-10 bg-transparent border-none outline-none text-base text-[#fff] peer'
+                    className='w-full h-10 pt-3 sm:pt-0 bg-transparent border-none outline-none text-base text-[#fff] peer'
                   />
                   <label
                     className={`absolute left-0 flex items-center justify-center text-[#fff] duration-150 ease-in-out 
-                    pointer-events-none transform -translate-y-2 top-1/2 
+                    pointer-events-none transform -translate-y-2 bottom-[10%] top-0 sm:top-[50%] sm:bottom-0 
                     peer-focus:top-2 peer-focus:-translate-y-6 ${
                       values.username ? "top-2 -translate-y-6" : ""
                     }`}

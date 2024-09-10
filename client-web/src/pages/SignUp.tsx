@@ -124,7 +124,7 @@ export const SignUp = () => {
     >
       <ToastContainer />
       <motion.div
-        className={`w-[50%] rounded-lg p-[30px] text-center border border-1 border-solid border-[rgba(255,255,255,0.5)]
+        className={`w-[100%] sm:w-[80%] md:w-[50%] rounded-lg p-[30px] text-center border border-1 border-solid border-[rgba(255,255,255,0.5)]
         backdrop-blur`}
         animate={controls}
         onMouseEnter={handleMouseEnter}

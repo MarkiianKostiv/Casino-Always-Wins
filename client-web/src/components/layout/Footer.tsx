@@ -110,7 +110,7 @@ export const Footer = () => {
         <div className='mt-4 text-center'>
           <p>
             &copy; {new Date().getFullYear()} Casino Always Wins.{" "}
-            {t("footer.r_reserved")}.
+            {t("footer.r_reserved")}
           </p>
         </div>
       </div>

@@ -9,11 +9,9 @@ import { useTranslation } from "react-i18next";
 
 const sections = ["Win", "Loss", "Win", "Loss", "Win", "Loss", "Win", "Loss"];
 const sectionCount = sections.length;
-const sectionAngle = 360 / sectionCount;
 
 export const SpinningWheel = () => {
   const [isSpinning, setIsSpinning] = useState(false);
-  const [gameFetched, setGameFetched] = useState(false);
   const [hidden, setHidden] = useState(true);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const { t } = useTranslation();
@@ -24,7 +22,6 @@ export const SpinningWheel = () => {
 
   const spinWheel = async () => {
     setIsSpinning(true);
-    setGameFetched(true);
     gsap.killTweensOf(canvasRef.current);
 
     if (user) {
@@ -40,13 +37,13 @@ export const SpinningWheel = () => {
   };
 
   useEffect(() => {
-    if (game && gameFetched) {
-      const randomExtraSpins = 5 * 5 + 5; // Додаткові оберти для ефекту
-      const sectionIndex = sections.findIndex(
-        (section) => section === (game.gameResult ? "Loss" : "Win")
-      );
+    if (game && !loading) {
+      const randomExtraSpins = 5 * 5 + 5; // Extra revs for effect
       const spins = randomExtraSpins * 360;
-      const targetAngle = sectionIndex * sectionAngle + sectionAngle / 2; // Середина цільового сектору
+
+      // Setting the exact angles for Win and Loss
+      let targetAngle = game.gameResult === true ? 67.5 : 22.5;
+
       const totalRotation = spins + targetAngle;
       gsap.set(canvasRef.current, { rotation: 0 });
 
@@ -89,7 +86,7 @@ export const SpinningWheel = () => {
               ctx.restore();
             });
 
-            // Обертання полотна
+            // Rotation of the blade
             ctx.save();
             ctx.translate(centerX, centerY);
             ctx.rotate((totalRotation * Math.PI) / 180);
@@ -99,16 +96,14 @@ export const SpinningWheel = () => {
         },
         onComplete: () => {
           setIsSpinning(false);
-          openCloseResultModal(); // Показуємо модалку після завершення обертання
+          openCloseResultModal();
           if (user) {
             dispatch(userGamesRequest(user.id));
           }
         },
       });
-
-      setGameFetched(false); // Скидаємо gameFetched після завершення обертання
     }
-  }, [game, gameFetched]);
+  }, [game, loading]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
